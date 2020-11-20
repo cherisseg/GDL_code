@@ -292,7 +292,7 @@ class WGANGP():
         # Defines generator model
         self.model = Model(model_input, model_output)
 
-         self.set_trainable(self.critic, True)
+        self.set_trainable(self.critic, True)
         
         self.model.compile(optimizer=self.get_opti(self.generator_learning_rate)
         , loss=self.wasserstein
